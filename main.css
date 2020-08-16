@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(60, 70, 96);
+    color: white;
+    font-size: large;
+}
+
+.top-panel{
+    display: flex;
+    justify-content: center;
+}
+
+.score{
+    background-color: rgb(42, 50, 68);
+    padding: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    border-radius: 30%;
+    
+}
+
+.turn{
+    display: block;
+    background-color: rgb(87, 101, 128);
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+
+.turn-panel{
+    display: flex;
+    position: relative;
+}
+
+.turn-x, .turn-o{
+    position: absolute;
+    top: 20px;
+}
+
+.turn-x{
+    left: 24px;
+}
+
+.turn-o{
+    right: 21px;
+}
+
+.turn-x::before{
+    content: "X";
+    background-color: rgb(87, 101, 128);
+    border: 1px solid rgb(87, 101, 128);
+}
+
+.turn-o::before{
+    content: "O";
+    background-color: rgb(87, 101, 128);
+    border: 1px solid rgb(87, 101, 128);
+}
+
+.turn-active{
+    background-clip: content-box;
+    animation: spin 10s linear infinite;
+    border-top: floralwhite 2px solid;
+    
+}
+
+@keyframes spin { 
+    100% { 
+      transform: rotateZ(360deg);
+    }
+  }
+
+.game-board{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    justify-content: center;
+    border-right: solid 2px black;
+    border-bottom: solid 2px black;
+    width: 452px;
+}
+
+.game-board-field{
+    align-items: middle;
+    border-left: solid 2px black;
+    border-top: solid 2px black;
+}
+
+.game-board-field:hover{
+    background-color: rgb(87, 101, 128);
+}
+
+.field-x::before{
+    display: block;
+    content: "X";
+    font-size: 125px;
+    width: 150px;
+    text-align: center;
+}
+
+.field-o::before{
+    display: block;
+    content: "O";
+    font-size: 125px;
+    width: 150px;
+    text-align: center;
+}
+
+.field-x:hover, .field-o:hover{
+    background-color: rgb(60, 70, 96);
+}
