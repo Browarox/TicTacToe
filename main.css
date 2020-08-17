@@ -33,7 +33,7 @@
     border-radius: 50%;
     font-size: 28px;
     font-weight: bold;
-    
+    border: 3px solid rgb(87, 101, 128);
 }
 
 .turn-panel{
@@ -68,8 +68,9 @@
 
 .turn-active{
     background-clip: content-box;
-    animation: spin 10s linear infinite;
-    border-top: floralwhite 2px solid;
+    animation: spin 2s linear infinite;
+    border-top: rgb(50, 245, 50) 3px solid;
+    border-bottom: rgb(50, 245, 50) 3px solid;
     
 }
 
