@@ -13,21 +13,21 @@
         <div class="turn-panel">
             <div class="turn turn-active"></div>
             <div class="turn-x"></div>
-            <div class="turn turn-inactive"></div>
+            <div class="turn"></div>
             <div class="turn-o"></div>
         </div>
         <div class="score score-o">2</div>
     </div>
     <div class="game-board">
-        <div class="game-board-field field-x"></div>
-        <div class="game-board-field field-o"></div>
-        <div class="game-board-field"></div>
-        <div class="game-board-field"></div>
-        <div class="game-board-field"></div>
-        <div class="game-board-field"></div>
-        <div class="game-board-field"></div>
-        <div class="game-board-field"></div>
-        <div class="game-board-field"></div>
+        <div onclick="Board.fieldChoose(1)" class="game-board-field"></div>
+        <div onclick="Board.fieldChoose(2)" class="game-board-field"></div>
+        <div onclick="Board.fieldChoose(3)" class="game-board-field"></div>
+        <div onclick="Board.fieldChoose(4)" class="game-board-field"></div>
+        <div onclick="Board.fieldChoose(5)" class="game-board-field"></div>
+        <div onclick="Board.fieldChoose(6)" class="game-board-field"></div>
+        <div onclick="Board.fieldChoose(7)" class="game-board-field"></div>
+        <div onclick="Board.fieldChoose(8)" class="game-board-field"></div>
+        <div onclick="Board.fieldChoose(9)" class="game-board-field"></div>
     </div>
 
     <script src='main.js'></script>
