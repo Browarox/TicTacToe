@@ -11,7 +11,6 @@
 .top-panel{
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .score{
@@ -40,6 +39,7 @@
 .turn-panel{
     display: flex;
     position: relative;
+    margin-top: 20px;
 }
 
 .turn-x, .turn-o{
@@ -48,11 +48,11 @@
 }
 
 .turn-x{
-    left: 23px;
+    left: 24px;
 }
 
 .turn-o{
-    right: 22px;
+    right: 21px;
 }
 
 .turn-x::before{
@@ -142,5 +142,4 @@
         height: 98px;
         font-size: 80px;
     }
-
 }
