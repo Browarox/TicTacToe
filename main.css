@@ -101,6 +101,11 @@
     background-color: rgb(87, 101, 128);
 }
 
+.field-x, .field-o{
+    border-top: solid black 2px;
+    border-left: solid black 2px;
+}
+
 .field-x::before{
     display: block;
     content: "X";
