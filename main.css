@@ -48,11 +48,11 @@
 }
 
 .turn-x{
-    left: 24px;
+    left: 23px;
 }
 
 .turn-o{
-    right: 21px;
+    right: 22px;
 }
 
 .turn-x::before{
